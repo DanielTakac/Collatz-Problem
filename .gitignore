@@ -2,3 +2,4 @@ obj
 *.save
 *.layout
 *.depend
+main.o
