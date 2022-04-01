@@ -3,3 +3,6 @@ obj
 *.layout
 *.depend
 main.o
+launch.json
+.vscode
+

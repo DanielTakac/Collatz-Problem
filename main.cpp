@@ -12,6 +12,7 @@ int main(){
 
     cout << "Choose a number: ";
     cin >> chosenNumber;
+
     cout << "\nChoose the delay between calculations (in ms): ";
     cin >> delay;
 
@@ -19,33 +20,31 @@ int main(){
 
     system("CLS");
 
-    while(mainLoop == true){
+    while (mainLoop) {
 
-    system("CLS");
+        system("CLS");
 
-    cout << "Chosen Number: " << chosenNumber << endl;
-    cout << "Current Number: " << currentNumber << endl;
+        cout << "Chosen Number: " << chosenNumber << endl;
+        cout << "Current Number: " << currentNumber << endl;
 
-    if(currentNumber % 2 == 0){
+        if (currentNumber % 2 == 0) {
 
-    cout << "\nNumber is even";
-    cout << "\nDividing by 2";
+            cout << "\nNumber is even";
+            cout << "\nDividing by 2";
 
-    currentNumber = currentNumber / 2;
+            currentNumber /= 2;
 
-    }else{
+        } else {
 
-    cout << "\nNumber is odd";
-    cout << "\nMultiplying by 3 and adding 1";
+            cout << "\nNumber is odd";
+            cout << "\nMultiplying by 3 and adding 1";
 
-    currentNumber = currentNumber * 3;
-    currentNumber = currentNumber + 1;
+            currentNumber *= 3;
+            currentNumber++;
 
-    }
+        }
 
-    Sleep(delay);
-
-
+        Sleep(delay);
 
     }
 
