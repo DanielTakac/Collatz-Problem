@@ -1,3 +1,3 @@
-# Collatz-Problem
+# Collatz Conjecture 
 
-Application for the Collatz problem a.k.a. 3X+1
+Console application for the Collatz Conjecture aka 3X+1
